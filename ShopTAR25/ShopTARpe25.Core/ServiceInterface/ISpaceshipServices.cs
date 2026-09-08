@@ -1,10 +1,15 @@
-﻿using System;
+﻿using ShopTARpe25.Core.Domain;
+using ShopTARpe25.Core.ServiceInterface;
+using ShopTARpe25.Core.Dto;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace ShopTARpe25.Core.ServiceInterface
 {
-    internal interface ISpaceshipServices
+    public interface ISpaceshipServices
     {
+        Task<Spaceship> Create(SpaceshipDto dto);
+
     }
 }
